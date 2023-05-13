@@ -1,10 +1,13 @@
 import {  Link } from "react-router-dom";
+// import { useState } from "react";
 import './header.css';
 
-function header() {
+function Header(props) {
+    const styleClass = props.styleClass
+    console.log(props);
   return (
     <>
-        <header className='header container'>
+        <header className={`header container ${styleClass === true ? 'activeSticky' : ""}`} >
             <div className='logo'>
                 {/* <img src="" alt="" /> */}
                 <h1><span className="logo_design">jt</span>lalong</h1>
@@ -23,4 +26,4 @@ function header() {
   );
 }
 
-export default header;
+export default Header;

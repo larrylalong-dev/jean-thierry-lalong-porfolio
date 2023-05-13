@@ -11,3 +11,33 @@
 .header .nav .menu_list li{
     padding: 0 15px;
 }
+
+.header .nav .menu_list li a{
+    color: white;
+}
+
+.header .logo{
+    color: white;
+}
+
+.header .logo .logo_design{
+    font-weight: bolder;
+    color: rgb(202, 108, 0);
+}
+
+
+.header.activeSticky{
+    position: sticky;
+    top: -50px;
+    width: 100%;
+    height: 0%;
+    transition: all 1s;
+    animation: stikyHeader .5s alternate forwards ease-out;
+    /* animation: crescendo 1.5s alternate forwards ease-in; */
+}
+
+@keyframes stikyHeader {
+    0% {top: -20px;}
+  100% {top: 0px;}
+}
+

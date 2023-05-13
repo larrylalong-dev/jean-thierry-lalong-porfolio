@@ -2,7 +2,6 @@ import  jean_thierry_lalong_rb  from "../../assets/images/jean_thierry_lalong.jp
 import "./banner.css"
 
 function banner() {
-    console.log(jean_thierry_lalong_rb);
     return (
         <div className="banner container">
             {/* <div>
