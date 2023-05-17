@@ -7,20 +7,22 @@ function Header(props) {
     console.log(props);
   return (
     <>
-        <header className={`header container ${styleClass === true ? 'activeSticky' : ""}`} >
-            <div className='logo'>
-                {/* <img src="" alt="" /> */}
-                <h1><span className="logo_design">jt</span>lalong</h1>
+        <header className={`header ${styleClass === true ? 'activeSticky' : ""}`} >
+            <div className="header_content container">
+                <div className='logo'>
+                    {/* <img src="" alt="" /> */}
+                    <h1><span className="logo_design">JT-</span>Lalong</h1>
+                </div>
+                <nav className="nav">
+                    <ul className="menu_list">
+                        <li><Link to="/">Accueil</Link></li>
+                        <li><Link to="/">A propos</Link></li>
+                        <li><Link to="/">Portfolio</Link></li>
+                        <li><Link to="/">Contact</Link></li>
+                        <li><Link to="/">Home</Link></li>
+                    </ul>
+                </nav>
             </div>
-            <nav className="nav">
-                <ul className="menu_list">
-                    <li><Link to="/">Accueil</Link></li>
-                    <li><Link to="/">A propos</Link></li>
-                    <li><Link to="/">Portfolio</Link></li>
-                    <li><Link to="/">Contact</Link></li>
-                    <li><Link to="/">Home</Link></li>
-                </ul>
-            </nav>
         </header>
     </>
   );

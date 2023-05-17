@@ -1,10 +1,108 @@
 .banner{
     /* background: url("../../assets/images/jean_thierry_lalong_rb.jpg"); */
-    height: 900px;
-    /* position: relative;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
     overflow: hidden;
-    background-size: cover;
+    /* background-size: cover;
     background-position: center;
     background-repeat: no-repeat; */
 }
 
+.banner>*{
+    color: white;
+}
+
+.banner .fisrt_title_banner .fisrt_title_banner_text{
+    font-size: 100px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin: 0 0 2px;
+}
+
+.banner .dot_banner{
+    color: rgb(202, 108, 0);
+    font-family: sans-serif;
+    font-size: 100px;
+    font-weight: 600;
+}
+
+.banner .second_title_banner{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    margin-left: 65px;
+} 
+
+.banner .second_title_banner::before{
+    position: absolute;
+    content: "";
+    top: 27px;
+    left: -65px;
+    height: 3px;
+    width: 55px;
+    background: rgb(202, 108, 0);
+}
+
+.banner .content_banner_text{
+    width: 100%;
+}
+
+.banner .description_post{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    width: 90%;
+    padding: 15px 0;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+
+/* bouton donwload */
+.banner .content_banner_btn{
+    display: inline-block;
+    background: rgb(202, 108, 0);
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .5s;
+    border: 1px solid rgb(202, 108, 0);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* link youtube */
+.banner .link_presentation_profil{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 100%;
+    -webkit-animation: ripple-white 1s linear infinite;
+    animation: ripple-blue 1s linear infinite;
+    -webkit-transition: .5s;
+    background: rgb(202, 108, 0);
+    font-size: 20px;
+    transition: 0.5;
+    position: absolute;
+    top: 45%;
+    right: 20%;
+    transform: translate(-50%,-50%);
+}
+
+.banner .link_presentation_profil:hover{
+    background: #fff;
+}
+.banner .link_presentation_profil:hover i{
+    color: rgb(202, 108, 0);
+}
