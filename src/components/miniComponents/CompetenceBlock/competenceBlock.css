@@ -1,0 +1,77 @@
+.competence_item{
+    padding: 20px;
+    width: 32%;
+    padding: 15px;
+    background-color: #212121;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.competence_item:hover{
+    background-color: #ca6c00;
+}
+
+.competence_item .compt_title{
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.competence_item .compt_description{
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7c838e;
+    line-height: 28px;
+    transition: .5s;
+}
+
+.competence_item:hover .compt_description{
+    color: #fff;
+}
+
+.competence_read_more a{
+    display: inline-block;
+    color: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    left: -85px;
+}
+
+.competence_read_more a::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    height: 2px;
+    width: 25px;
+    background: #ca6c00;
+    transition: .5s;
+}
+
+.competence_item:hover .competence_read_more a::after{
+    background: #fff;
+    right: -35px;
+}
+
+.competence_item:hover .competence_read_more a{
+    left: 0;
+    color: #212121;
+}
+
+.competence_item .compt_icon{
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 45px;
+    color: #ca6c00;
+    transition: .3s;
+}
+
+.competence_item:hover .compt_icon{
+    color: white;
+}

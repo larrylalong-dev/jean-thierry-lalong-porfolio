@@ -1,0 +1,97 @@
+.bloc_content{
+    display: flex;
+    margin-top: 100px;
+}
+
+.detail_profil{
+    color: white;
+    padding-left: 25px;
+}
+
+.about_description{
+    color: #ffffff57;
+}
+
+.about_details, .about_description{
+    margin-top: 15px;
+}
+
+.about_details{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about_description{
+    font-size: 16px;
+    color: #7c838e;
+    margin-bottom: 25px;
+}
+
+.about_title{
+    color: #ca6c00;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 17px;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img_profil, .detail_profil{
+    width: 50%;
+}
+
+.img_profil{
+    text-align: center;
+}
+
+.img_profil img{
+    width: 100%;
+    padding-right: 25px;
+
+}
+
+.bloc_detail_profil{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bloc_head{
+    margin: 0;
+}
+
+.bloc_detail_profil .info_item{
+    padding: 15px;
+    border-left: 2px solid #ca6c00;
+    background-color: #212121;
+    width: 48%;
+    margin-top: 10px;
+}
+
+.bloc_detail_profil .info_item .info_content .label{
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.bloc_detail_profil .info_item .info_content .description_info{
+    color: #ffffff57;
+    font-size: 13.5px;
+}
+
+.btn_dowload{
+
+    display: inline-block;
+    background: rgb(202, 108, 0);
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .5s;
+    border: 1px solid rgb(202, 108, 0);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+}

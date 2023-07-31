@@ -1,0 +1,7 @@
+.main> div:nth-child(1){
+    margin-top: 0;
+}
+
+.main> div{
+    margin-top: 70px;
+}

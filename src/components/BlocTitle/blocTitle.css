@@ -1,0 +1,31 @@
+.bloc_title{
+    text-align: center;
+}
+
+.small_title{
+    color: #7c838e;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 0 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.big_title{
+    font-size: 46px;
+    text-transform: none;
+    font-weight: 700;
+    position: relative;
+    color: #fff;
+}
+
+.big_title::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    height: 45px;
+    width: 3px;
+    background: #ca6c00;
+}
